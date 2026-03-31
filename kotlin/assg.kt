@@ -11,7 +11,7 @@
  * -valueto be referenced
  * 
  * */ 
-
+//DATA TYPES
 var studentName:String="Alex Morgan" //mutable meaning it can always change
 
 val studentID:Int = 2024001 //it is immutable
@@ -26,7 +26,7 @@ val studentInfo= "student:$studentName J (ID:$studentID) has GPA $GPA and is enr
 
    var phoneNumber: String? = null
 
-    
+    //assignment: create a function that displays a menu with options for the user to choose from
 fun displayMenu(){
     println("====MENU====")
     println("1.view profile")
@@ -34,6 +34,7 @@ fun displayMenu(){
     println("3.Logout")
     println("=============")
 }
+//assignment: create a function that takes in the price of an item and the discount percentage and returns the discounted price
 fun calculateDiscount(price:Double,discountPercent:Double):Double{
     
    val discountedPrice = price - (price * discountPercent/100)
@@ -44,7 +45,7 @@ fun calculateDiscount(price:Double,discountPercent:Double):Double{
    
 
 }
-
+// assignment: create a function that takes in a score and returns the corresponding grade based on the following scale
 fun getGrade(score:Int):String{
    return when (score){
         in 80..100 ->"A"
