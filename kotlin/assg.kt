@@ -104,4 +104,10 @@ println(isEven(364))
 println(tempStatus(19))
 println(dayOfWeek("friday"))
 println(trafficAction("red"))
+
+//loops
+ for (number in 1..10){
+      println("# $number")
+
+ }
 }
