@@ -56,6 +56,43 @@ fun getGrade(score:Int):String{
        
     }
 }
+    fun isEven(i:Int){ 
+  if (i % 2 == 0) {
+    println("even number")
+}else {
+    println("is an odd number")
+}}
+
+  fun tempStatus(temp:Int){
+      if (temp > 30){
+          println("Hot day!!!!")
+      }else if(temp in 20..30){
+          println("Perfect weather")
+      }else {
+          println("Cool day")
+      }
+   
+  }
+  
+  fun dayOfWeek(day:String):String{
+      return when(day){
+          in "monday" -> "Back to work"
+          in "sartuday","sunday"-> "Weekend! Time to relax"
+          in "friday" -> "TGIF!"
+          else -> "Regular weekday"
+      }
+  }
+  
+  fun trafficAction(col:String):String{
+      return when (col){
+          in "red"-> "STOP"
+          in "yellow"-> "CAUTION"
+          in "green"-> "GO"
+          else ->"INVALID"
+      }
+  }
+
+}
 fun main() {
     
  println(studentInfo)
@@ -63,5 +100,8 @@ fun main() {
 displayMenu()
 calculateDiscount(1200.123434,15.1323232)
 println(getGrade(90))
-
+println(isEven(364))
+println(tempStatus(19))
+println(dayOfWeek("friday"))
+println(trafficAction("red"))
 }
